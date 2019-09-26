@@ -51,6 +51,7 @@ public class ToDo {
                     list.remove(" Today:");
                     list.insertBefore(" Tommorrow:", " Today:");
                     list.remove(" Tomorrow:");
+                    JOptionPane.showInputDialog("Completed");
                 }
                 else
                 {
@@ -58,8 +59,10 @@ public class ToDo {
                     where = JOptionPane.showInputDialog("To today or tommorrow?");
                     if(where.contains("day"));
                     {
+                        JFrame frame = new JFrame("To Do");
                         list.insertBefore(" Today:", move);
                         list.remove(move);
+                        JOptionPane.showMessageDialog(frame, "Completed");
                     }
                 }
             }

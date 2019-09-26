@@ -64,15 +64,13 @@ public class ColorGui {
             {
                 color.setText(b);
             }
-            else
-                if(source == red)
-                {
+            else {
+                if (source == red) {
                     color.setText(r);
-                }
-                else
-                {
+                } else {
                     color.setText(y);
                 }
+            }
         }
     }
 }
